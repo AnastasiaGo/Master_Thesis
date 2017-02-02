@@ -1,3 +1,5 @@
+#!/usr/bin/python3 
+
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn import cross_validation
@@ -5,8 +7,8 @@ from sklearn.cross_validation import train_test_split
 
 import sys, time, glob
 
-dirpath1='./depression_copy/'
-dirpath2='./nondepression_copy/'
+dirpath1='depression/'
+dirpath2='non_depression/'
 
 labels = []     # 1 for depression, 0 for non-depression
 documents = []
